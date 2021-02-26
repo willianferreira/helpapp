@@ -1,0 +1,59 @@
+body, html {
+    background-color: #fff;
+    height: 100%;
+    margin:0px;
+}
+#helpvox { background:#143480; text-align:center; color:#fff; position:absolute; top:1; width:100%; height:13%; z-index:111; } 
+#helpvox img { width:190px; padding-top:15px; }
+#videos {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    float: left;
+}
+#subscriber {
+    position: absolute;
+
+    margin-top: 80px;
+    width: 100%;
+    height: 45%;
+    z-index: 110;
+}
+#publisher {
+    position: absolute;
+    width: 100%;
+    height: 45%;
+    bottom: 0px;
+    z-index: 100;
+    border-radius: 3px;
+}
+#textchat {
+    position: relative;
+    width: 20%;
+    float: right;
+    right: 0;
+    height: 100%;
+    background-color: #333;
+    display:none;
+}
+#history {
+     width: 100%;
+     height: calc(100% - 40px);
+     overflow: auto;
+}
+input#msgTxt {
+            height: 40px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+}
+#history .mine {
+    color: #00FF00;
+    text-align: right;
+    margin-right: 10px;
+    font-size:20px;
+}
+#history .theirs {
+    color: #00FFFF;
+    margin-left: 10px;
+}

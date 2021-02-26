@@ -1,0 +1,95 @@
+body, html {
+    background-color: #000;
+    height: 100%;
+    margin:0px;
+}
+#helpvox { background:#143480; text-align:center; color:#fff; position:absolute; top:1; width:100%; height:auto; z-index:1001; } 
+#helpvox img { width:190px; padding-top:10px; }
+
+.modal-backdrop { background: none !important; }
+.modal-dialog { border: 2px solid #000 !important; }
+
+#videos {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    float: left;
+}
+#subscriber {
+    position: absolute;
+    background: #fff;
+    width: 50% !important;
+    height: 93%;
+    z-index: 10;
+    margin-left: 25%;
+    bottom: 0px;
+    bottom: 3px solid #000;
+    border: 5px solid #143480;
+}
+#publisher {
+    position: absolute;
+    width: 18% !important;
+    height: 50%;
+    bottom: 0px;
+    z-index: 100;
+    border-radius: 3px;
+    background: #b01b1b;
+    border: 5px solid #143480;
+}
+#textchat {
+    position: absolute;
+    width: 20%;
+    float: right;
+    right: 0;
+    height: 93%;
+    background-color: #e6e6e6;
+    bottom: 0px;
+    border-top: 5px solid #143480;
+    border-bottom: 5px solid #143480;
+}
+#history {
+     width: 100%;
+     height: calc(80% - 40px);
+     overflow: auto;
+}
+input#msgTxt {
+    height: 80px;
+    position: absolute;
+    bottom: 0;
+    width: 90%;
+    margin-left: 22px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 48px;
+    border: 2px solid #143480;
+}
+#history .mine:before {
+  content: "Eu: ";
+}
+#history .mine {
+    color: #4D4D4D;
+    text-align: left;
+    margin-left: 10px;
+    font-size: 17px;
+    font-family: arial;
+    padding: 10px;
+    margin-top:0px;
+    margin-bottom:0px;
+}
+#history .theirs:before {
+  content: "Intérpretes: ";
+}
+#history .theirs {
+    content: "Intérprete: ";
+    color: #4D4D4D;
+    text-align: left;
+    margin-left: 10px;
+    font-size: 17px;
+    font-family: arial;
+    padding: 10px;
+    font-weight:bold;
+    margin-top:0px;
+    margin-bottom:0px;
+}
+#enviar { position: absolute;bottom: 5px;right: 12px;width: 91%;border-radius: 10px;background-color: #4CAF50; /* Green */border: none;color: white;padding: 8px 20px;text-align: center;text-decoration: none; display: inline-block;font-size: 13px; }
+#chat { display:none; }

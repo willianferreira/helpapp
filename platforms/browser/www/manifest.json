@@ -1,0 +1,11 @@
+{
+  "background_color": "#FFF",
+  "display": "standalone",
+  "name": "Helpvox",
+  "short_name": "Helpvox",
+  "version": "com.creative.helpvox2",
+  "description": "Empresa mais completa em acessibilidade para surdos e deficientes auditivos do mundo, utiliza os serviços de acessibilidade do Helpvox!",
+  "author": "Creative Negócios",
+  "icons": [],
+  "start_url": "index.html"
+}

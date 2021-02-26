@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en" class="h-100">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+    <title>Helpvox - Comunicação para Surdos e Deficientes Auditivos</title>
+
+    <!-- manifest meta -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="img/favicon180.png" sizes="180x180">
+    <link rel="icon" href="img/favicon32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="img/favicon16.png" sizes="16x16" type="image/png">
+
+    <!-- Material icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <!-- swiper CSS -->
+    <link href="vendor/swiper/css/swiper.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet" id="style">
+    
+   <style>
+       
+    @media only screen and (max-width: 600px) {
+      .no-mobile {
+        display:none;
+      }
+    }
+       
+   </style>
+
+</head>
+
+<body class="body-scroll d-flex flex-column h-100 menu-overlay">
+    
+    <!-- WIDGET -->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+              <div class="vw-plugin-top-wrapper"></div>
+            </div>
+        </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app'); 
+    </script>
+    <!-- WIDGET -->
+
+    <!-- LOADING -->
+    <div id="background-load">
+    <div class="carregamento">          
+          <div id="text-load"><img width="150" src="img/loader.gif"></div> 
+        </div>
+    </div>
+    
+    <!-- screen loader -->
+    <div class="container-fluid h-100 loader-display">
+        <div class="row h-100">
+            <div class="align-self-center col">
+                <div class="logo-loading">
+                    <div class="icon icon-100 mb-4 rounded-circle">
+                        <img src="img/favicon144.png" alt="" class="w-100">
+                    </div>
+                    <h4 class="text-default">Helpvox</h4>
+                    <p class="text-secondary">Tecnologia para inclusão social</p>
+                    <div class="loader-ellipsis">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Begin page content -->
+    <main class="flex-shrink-0 main has-footer">
+        <!-- Fixed navbar -->
+        <header class="header">
+            <div class="row">
+                <div class="col-auto px-0">
+                    <button class="menu-btn btn btn-40 btn-link back-btn" type="button">
+                        <span class="material-icons"></span>
+                    </button>
+                </div>
+                <div class="text-left col align-self-center">
+                   
+                </div>
+                <div class="ml-auto col-auto align-self-center">
+                    <a href="cadastrar.php" class="text-white">
+                        Cadastrar Login
+                    </a>
+                </div>
+            </div>
+        </header>
+        
+        
+        <div class="container h-100 text-white">
+            <div class="row h-100">
+                <div class="col-12 align-self-center mb-4">
+                    <div class="row justify-content-center">
+                        <div class="col-11 col-sm-7 col-md-6 col-lg-5 col-xl-4">                          
+                            <form name="logar" id="logar">
+                                <img class="img-responsive" src="img/logo.png">
+                                <h4 class="font-weight-normal mb-3 mt-3 text-center">Fazer login</h4>
+
+                                 <div id="alerts"></div>
+
+                                <div class="form-group float-label active">
+                                    <input id="usuario" type="tel" autocomplete="off" class="form-control text-white" value="">
+                                    <label class="form-control-label text-white">CPF</label>
+                                </div>
+                                <div class="form-group float-label position-relative">
+                                    <input id="senha" type="tel" value="" autocomplete="off" class="form-control text-white">
+                                    <label class="form-control-label text-white">Data de Nascimento</label>
+                                </div> 
+                                <div class="col-lg-12">
+                                    <div id="g-recaptcha" class="g-recaptcha" data-sitekey="6LdGm-4ZAAAAAFGh8f0dulOpF6cLSHfo3dTRisaN"></div>
+                                </div> 
+                                <div class="form-group float-label position-relative">
+                                    <button type="submit" name="logar" class="btn btn-success rounded btn-block">Acessar</button>
+                            </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </main>
+
+
+    <!-- Required jquery and libraries -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- cookie js -->
+    <script src="js/jquery.cookie.js"></script>
+
+    <!-- Swiper slider  js-->
+    <script src="<vendor/swiper/js/swiper.min.js"></script>
+
+    <!-- Customized jquery file  -->
+    <script src="js/main.js"></script>
+    <script src="js/color-scheme-demo.js"></script>
+
+
+    <!-- page level custom script -->
+    <script src="js/app.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="cordova.js"></script>
+    <script src="js/index.js"></script>
+
+	<script type="text/javascript">
+	    $("#senha").mask("99/99/9999");
+	    $("#usuario").mask("999.999.999-99");
+  	</script>
+
+
+<script type="text/javascript">
+
+  $(function() {
+    $('form[name="logar"]').submit(function(event) {
+       event.preventDefault();
+
+       var usuario = $("#usuario").val();
+       var senha = $("#senha").val();
+        
+        $.ajax({
+          type: "POST",
+          data: {usuario:usuario, senha:senha},
+          
+          url: "https://www.helpvox.com.br/connect/php/login_app.php",
+          dataType: "html",
+          success: function(result){
+
+            if(result == 'invalid_password') {
+              $('#alerts').html('<div class="alert alert-danger" id="alert_captcha" role="alert"><strong>Erro!</strong> Dados incorretos, tente novamente.</div>');
+            }else {
+                 location.href="dashboard.html?id="+result;
+            }
+
+          },
+          beforeSend: function(){
+            $('#background-load').css({display:"block"});
+            $('#text-load').css({display:"block"});
+          },
+          complete: function(msg){
+            $('#background-load').css({display:"none"});
+            $('#text-load').css({display:"none"});
+          }
+        });
+
+    });
+  });
+
+</script>
+    
+</body>
+
+</html>
